@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assignment03 case 2</title>
+   <link rel="stylesheet" href="assest/lib/normalize.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container */
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: absolute;
+            left: 0;
+            top:100px  ;
+            width: 250px;
+            height: 100vh;
+            background-color: purple;
+            color: white;
+            margin-top: auto;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Main Content */
+        .content {
+            position: relative;
+            top: 10%;
+            margin-left: 250px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        .heder {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            border: 2px solid black;
+            background-color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 100px;
+            height: 60px;
+        }
+
+        /* Navigation Bar Styling */
+        .top-nav {
+            position: absolute;
+            right: 50px; /* Distance from the right */
+            top: 25px; /* Adjust manually to align with the logo */
+            width: auto; /* Adjust to fit content */
+        }
+
+        /* Navigation Links Styling */
+        .top-nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 20px; /* Spacing between links */
+        }
+
+        .image-gallery {
+            position: relative;
+            top: -20px;
+            width: 100%;
+            height: 200px;
+        }
+
+        .image-box {
+            position: absolute;
+            width: 33.33%;
+            height: 100%;
+            border: 2px solid green;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Positioning Images */
+        .image-box:nth-child(1) {
+            left: 0;
+        }
+
+        .image-box:nth-child(2) {
+            left: 33.33%;
+        }
+
+        .image-box:nth-child(3) {
+            right: 0;
+        }
+
+        /* Text Content */
+        .text-content {
+            position: relative;
+            margin-top: 0px;
+            padding: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            position: relative;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+        <header class="heder">
+            <img src="assest/image/ijse.jpg" alt="Logo" class="logo">
+            <div class="top-nav">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Contacts</a>
+                <a href="#">About Us</a>
+            </div>
+        </header>
+
+
+    <!-- Sidebar -->
+    <section class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <section class="image-gallery">
+            <div class="image-box"><img src="assest/image/leaf.webp" alt="Image"></div>
+            <div class="image-box"><img src="assest/image/leaf.webp" alt="Image"></div>
+            <div class="image-box"><img src="assest/image/leaf.webp" alt="Image"></div>
+        </section>
+
+        <section class="text-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos dolorum ea earum in maiores maxime, minus nobis, porro possimus praesentium quam quas quibusdam sed sunt suscipit voluptate voluptates voluptatum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore doloribus explicabo illo in magni molestiae nesciunt numquam optio provident quia quidem quos saepe, sed tempore veritatis voluptate voluptatibus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos dolorum ea earum in maiores maxime, minus nobis, porro possimus praesentium quam quas quibusdam sed sunt suscipit voluptate voluptates voluptatum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore doloribus explicabo illo in magni molestiae nesciunt numquam optio provident quia quidem quos saepe, sed tempore veritatis voluptate voluptatibus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore doloribus explicabo illo in magni molestiae nesciunt numquam optio provident quia quidem quos saepe, sed tempore veritatis voluptate voluptatibus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos dolorum ea earum in maiores maxime, minus nobis, porro possimus praesentium quam quas quibusdam sed sunt suscipit voluptate voluptates voluptatum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore doloribus explicabo illo in magni molestiae nesciunt numquam optio provident quia quidem quos saepe, sed tempore veritatis voluptate voluptatibus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos dolorum ea earum in maiores maxime, minus nobis, porro possimus praesentium quam quas quibusdam sed sunt suscipit voluptate voluptates voluptatum.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>Developed By IJSE</p>
+        </footer>
+    </section>
+</div>
+</body>
+</html>
+
+
+
+
+</body>
+</html>
